@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="main-card-component">
+      <div class="star-holder">
+        <img
+          src="./images/icon-star.svg"
+          alt="logo that looks like a yellow star"
+          srcset=""
+        />
+      </div>
+      <div class="text-section">
+        <h1 class="title">How did we do?</h1>
+        <p class="info">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="rating-section">
+        <button class="pointer">1</button><button class="pointer">2</button
+        ><button class="pointer">3</button><button class="pointer">4</button
+        ><button class="pointer">5</button>
+      </div>
+      <button class="cta pointer">Submit</button>
+    </div>
+    <div class="main-card-alternative hidden">
+      <div class="img-holder">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="A image that says thank you User"
+        />
+      </div>
+      <div class="nmbr-of-stars">
+        <p class="star-info">You selected out of 5</p>
+      </div>
+      <div class="alterante-text">
+        <h1 class="thank-you">Thank you!</h1>
+        <p class="alt-info">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <!-- Add rating here -->
+
+    <!-- Thank you state end -->
+  </body>
+</html>
