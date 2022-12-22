@@ -87,20 +87,21 @@ select {
 
 /* Helper */
 
-.hidden {
+#hidden {
   display: none;
 }
 .pointer {
   cursor: pointer;
 }
 
-/* ?Actual CODE */
+/*Actual CODE */
 body {
   background-color: var(--Very-Dark-Blue);
   font-family: var(--ff-overpass);
   display: grid;
   align-items: center;
   padding: 1.3rem;
+  justify-content: center;
 }
 
 .main-card-component {
@@ -165,9 +166,65 @@ body {
   font-weight: var(--op-700);
 }
 
+
+
 .cta:hover,
 .cta:focus-within {
   background-color: var(--White);
   color: var(--Orange);
   transition: 0.15s ease-in-out;
+}
+
+.cta:active
+{
+  background-color: var(--Medium-Grey);
+}
+
+/* Alt */
+.alternative{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:2rem 1.5rem;
+ 
+}
+
+.nmbr-of-stars{
+  --Light-Grey: hsl(217, 12%, 18%);
+  background-color: var(--Light-Grey);
+  border-radius: 2rem;
+  width: fit-content;
+  margin: 0 auto 1.5rem auto;
+  padding-inline: .8rem;
+  padding-block: .4rem;
+  color: var(--Orange);
+}
+.alt.info{
+  margin-block-end: 0;
+}
+.img-section{
+  margin-block-end: 1.4rem;
+}
+.alternative > *
+{
+  text-align: center;
+}
+
+@media(min-width:570px)
+{
+  .main-card-component{
+    border-radius: 2rem;
+    max-width: 25rem;
+    padding: 1.5rem 2rem .8rem 2rem;
+  }
+  .alternative{
+    padding:2.5rem 1.5rem;
+  }
+  .alt.info{
+    text-align: center;
+  }
+  .rating-section{
+    margin-bottom: .8rem;
+  }
 }

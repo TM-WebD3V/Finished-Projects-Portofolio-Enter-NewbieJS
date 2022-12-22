@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script defer src="./app.js"></script>
     <!-- Rating state start -->
     <div class="main-card-component">
       <div class="star-holder">
@@ -54,24 +55,28 @@
         ><button class="pointer">3</button><button class="pointer">4</button
         ><button class="pointer">5</button>
       </div>
-      <button class="cta pointer">Submit</button>
+      <button class="cta">Submit</button>
     </div>
-    <div class="main-card-alternative hidden">
-      <div class="img-holder">
-        <img
-          src="./images/illustration-thank-you.svg"
-          alt="A image that says thank you User"
-        />
+    <div class="main-card-component alternative " id="hidden">
+      <div class="img-section">
+        <div class="img-holder">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="A image that says thank you User"
+          />
+        </div>
       </div>
-      <div class="nmbr-of-stars">
-        <p class="star-info">You selected out of 5</p>
-      </div>
-      <div class="alterante-text">
-        <h1 class="thank-you">Thank you!</h1>
-        <p class="alt-info">
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
+      <div class="text-section-alt">
+        <div class="nmbr-of-stars">
+          <p class="star-info">You selected <span class="reactive"></span> out of 5</p>
+        </div>
+        <div class="alterante-text">
+          <h1 class="thank-you title">Thank you!</h1>
+          <p class="alt info">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
     </div>
     <!-- Rating state end -->
