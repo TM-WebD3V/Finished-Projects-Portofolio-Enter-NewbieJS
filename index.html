@@ -50,14 +50,17 @@
           is appreciated to help us improve our offering!
         </p>
       </div>
-      <div class="rating-section">
-        <button class="pointer">1</button><button class="pointer">2</button
-        ><button class="pointer">3</button><button class="pointer">4</button
-        ><button class="pointer">5</button>
-      </div>
-      <button class="cta">Submit</button>
-    </div>
-    <div class="main-card-component alternative " id="hidden">
+      <form class="rating-section">
+        <div class="rating__flex">
+          <input type="radio" name="rate-us" class="pointer" value="1" />
+          <input type="radio" name="rate-us" class="pointer"value="2"  />
+          <input type="radio" name="rate-us" class="pointer"value="3" />
+          <input type="radio" name="rate-us" class="pointer"value="4" />
+          <input type="radio" name="rate-us" class="pointer"value="5" />
+        </div>
+        <input type="submit" value="Submit" class="cta" />
+      </form>
+    <div class="main-card-component alternative" id="hidden">
       <div class="img-section">
         <div class="img-holder">
           <img
@@ -68,7 +71,9 @@
       </div>
       <div class="text-section-alt">
         <div class="nmbr-of-stars">
-          <p class="star-info">You selected <span class="reactive"></span> out of 5</p>
+          <p class="star-info">
+            You selected <span class="reactive"></span> out of 5
+          </p>
         </div>
         <div class="alterante-text">
           <h1 class="thank-you title">Thank you!</h1>
