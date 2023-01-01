@@ -134,12 +134,13 @@ body {
   margin-block-end: 1.3rem;
 }
 
-/* .rating__flex {
+.rating__flex {
   display: flex;
   gap: 0.8rem;
   justify-content: space-between;
-} */
-.rating__flex>input {
+}
+
+.rating__flex>input[type=radio] {
   background-color: var(--Btn-color);
   color: var(--Medium-Grey);
   border: none;
@@ -149,6 +150,8 @@ body {
   padding: 0.8rem;
   text-align: center;
   font-weight: var(--op-700);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .rating__flex>input:hover {
