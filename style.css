@@ -140,18 +140,28 @@ body {
   justify-content: space-between;
 }
 
+.float {
+  position: absolute;
+}
+
 .rating__flex>input[type=radio] {
   background-color: var(--Btn-color);
   color: var(--Medium-Grey);
   border: none;
   font-size: 1rem;
   border-radius: 50%;
-  width: 3rem;
-  padding: 0.8rem;
+  width: 2rem;
+  padding: 1.2rem;
   text-align: center;
   font-weight: var(--op-700);
   -webkit-appearance: none;
   -moz-appearance: none;
+  position: relative;
+}
+
+.ft-one {
+  top: 10px;
+  right: 50px;
 }
 
 .rating__flex>input:hover {
