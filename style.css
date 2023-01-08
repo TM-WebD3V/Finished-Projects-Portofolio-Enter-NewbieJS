@@ -92,7 +92,8 @@ select {
   display: none;
 }
 
-.pointer {
+.pointer,
+.float {
   cursor: pointer;
 }
 
@@ -142,21 +143,33 @@ body {
 
 .float {
   position: absolute;
+  left: 24px;
+  top: 27%;
+  color: var(--Light-Grey);
 }
 
-.rating__flex>input[type=radio] {
+
+#one {
+  left: 25.5px;
+}
+
+label {
+  position: relative;
+}
+
+
+input[type=radio] {
   background-color: var(--Btn-color);
   color: var(--Medium-Grey);
   border: none;
   font-size: 1rem;
   border-radius: 50%;
   width: 2rem;
-  padding: 1.2rem;
+  padding: 1.5rem;
   text-align: center;
   font-weight: var(--op-700);
   -webkit-appearance: none;
   -moz-appearance: none;
-  position: relative;
 }
 
 .ft-one {
@@ -164,9 +177,8 @@ body {
   right: 50px;
 }
 
-.rating__flex>input:hover {
+input:hover {
   transition: 0.15s ease-in;
-  color: var(--White);
   background-color: var(--Orange);
 }
 
@@ -245,7 +257,4 @@ body {
     text-align: center;
   }
 
-  .rating-section {
-    margin-bottom: .8rem;
-  }
 }
